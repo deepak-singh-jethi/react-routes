@@ -20,8 +20,12 @@ function Home() {
         {PRODUCTS.map((product) => {
           return (
             <div className="product" key={product.id}>
-              <img src={product.image} alt={product.name} />
+              <div className="img-container">
+                <img src={product.image} alt={product.name} />
+              </div>
+
               <h3>{product.name}</h3>
+              <p>{product.price} $</p>
               <p>{product.description}</p>
               <p>
                 <button
@@ -35,7 +39,7 @@ function Home() {
               </p>
               {!product.inStock && <span>Out of stock</span>}
               <p>
-                <Link to={`/product/${product.id}`}>Get details</Link>
+                <Link to={`${product.id}`}>Get details</Link>
               </p>
             </div>
           );

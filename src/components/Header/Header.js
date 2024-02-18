@@ -9,20 +9,20 @@ function Header() {
       <ul>
         <li>
           <NavLink
-            to="/"
+            to=""
             className={({ isActive }) => (isActive ? "active" : undefined)}>
             Home
           </NavLink>
         </li>
 
         <li>
-          <NavLink to="/contact">contact</NavLink>
+          <NavLink to="contact">contact</NavLink>
         </li>
         <li>
-          <NavLink to="/social">Social</NavLink>
+          <NavLink to="social">Social</NavLink>
         </li>
         <li>
-          <NavLink to="/cart">
+          <NavLink to="cart">
             cart <span id="cart_data">{cartItems}</span>
           </NavLink>
         </li>

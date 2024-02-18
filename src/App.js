@@ -13,28 +13,28 @@ import Product from "./components/product-page/Product.js";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/root",
       element: <Root></Root>,
       errorElement: <Error></Error>,
       children: [
         {
-          path: "/cart",
+          path: "cart",
           element: <Cart></Cart>,
         },
         {
-          path: "/",
+          path: "",
           element: <Home></Home>,
         },
         {
-          path: "/contact",
+          path: "contact",
           element: <ContactUs></ContactUs>,
         },
         {
-          path: "/social",
+          path: "social",
           element: <About></About>,
         },
         {
-          path: "/product/:productId",
+          path: ":productId",
           element: <Product></Product>,
         },
       ],

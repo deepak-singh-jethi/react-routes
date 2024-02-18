@@ -25,7 +25,7 @@ function Cart() {
       <div className="cart_items">
         <h1>Cart is empty</h1>
         <p>Please add some items to your cart</p>
-        <Link to="/">Back to Home</Link>
+        <Link to="..">Back to Home</Link>
       </div>
     );
   }

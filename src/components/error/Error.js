@@ -11,7 +11,7 @@ function Error() {
         <h2>Page not found</h2>
         <h3>Please try again</h3>
         <h4>
-          Or go to the <Link to="/">Home page</Link>
+          Or go to the <Link to="">Home page</Link>
         </h4>
       </div>
     </>
